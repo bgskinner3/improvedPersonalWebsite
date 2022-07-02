@@ -10,7 +10,7 @@ const cors = require('cors');
 const express = require('express');
 const { ApolloServerPluginDrainHttpServer } = require('apollo-server-core');
 require('dotenv').config();
-const dfs = require('../')
+
 const errorHandler = (err, req, res, next) => {
   if (res.headersSent) {
     return next(err);

@@ -6,7 +6,6 @@ const bcrypt = require('bcrypt');
 const path = require('path');
 const fs = require('fs');
 const GraphQLUpload = require('graphql-upload/GraphQLUpload.js');
-const jndskg = require('../../')
 //using this to generate a random string to replace the text of the file.
 // this is purely for myself if and when i upload images, any sensitive content
 //labelng the image will be replaced with a random string.
