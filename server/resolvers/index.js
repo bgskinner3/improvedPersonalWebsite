@@ -153,9 +153,10 @@ const resolvers = {
       const stream = createReadStream();
       const pathName = path.join(
         __dirname,
-        `../../src/projectimages/${randomName}`
+        `../../build/projectimages/${randomName}`
       );
       //   ../../../build/blogimages
+      console.log('pathName', pathName)
       await stream.pipe(fs.createWriteStream(pathName));
 
       return {

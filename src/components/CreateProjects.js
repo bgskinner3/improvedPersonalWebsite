@@ -39,6 +39,7 @@ const CreateProjects = () => {
   const handleSubmit = async () => {
     try {
 
+      console.log('path heroku', path)
       await createproject({
         variables: {
           input: {

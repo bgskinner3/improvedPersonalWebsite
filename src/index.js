@@ -10,7 +10,6 @@ import {
   ApolloProvider,
   ApolloLink,
   from,
-  createHttpLink,
 } from '@apollo/client';
 import { createUploadLink } from 'apollo-upload-client';
 const jwtAuth = process.env.REACT_APP_JWT_SECRET;
@@ -51,6 +50,8 @@ if (process.env.NODE_ENV === 'production') {
 } else {
   link = 'http://localhost:4000/graphql';
 }
+
+console.log('link in index, ', link)
 const httpLink = createUploadLink({
   uri: link,
   fetch: customFetch,
