@@ -47,7 +47,7 @@ const customFetch = (uri, options) => {
 };
 let link;
 if (process.env.NODE_ENV === 'production') {
-  link = 'https://brennangskinner.herokuapp.com/graphql';
+  link = '/graphql';
 } else {
   link = 'http://localhost:4000/graphql';
 }
