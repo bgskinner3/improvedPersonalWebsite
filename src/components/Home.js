@@ -1,7 +1,7 @@
 import React from 'react';
 import profile from '../images/profile.jpg';
 import Projects from './Projects';
-import ResumePage from './Resume';
+
 
 const Home = () => {
   return (
@@ -161,29 +161,4 @@ const Home = () => {
 
 export default Home;
 
-// {
-//   /* <div className="md:flex flex-grow border-t border-black hidden mb-5" /> */
-// }
 
-// {
-//   /* <div className="grid grid-cols-1 font-black bg-opacity-50 bg-slate-400 text-black text-bold text-md object-contain text-left font-serif ml-10 mr-10 text-center">
-//           <p>
-//             I'm a Software Engineer proficient Javascript, Node, SQL and
-//             more!
-//           </p>
-//           <p>
-//             Take a look at some of my work with links to the App and GitHub.
-//           </p>
-//           <p>
-//             Feel free to reach out if you have any questions or comments
-//           </p>
-//           <p>
-//             My resume and contact information can be found above or you can
-//             you can email me directly.
-//           </p>
-//         </div> */
-// }
-
-// {
-//   /* <div className="md:flex flex-grow border-t border-black hidden mt-5" /> */
-// }

@@ -26,9 +26,6 @@
     "postcss": "^8.4.14",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-file-viewer": "^0.5.0",
-    "react-pdf": "^5.7.2",
-    "react-pdf-viewer": "^0.1.0",
     "react-router-dom": "^6.3.0",
     "react-scroll": "^1.8.7",
     "react-toastify": "^9.0.5",
@@ -49,7 +46,7 @@
     "workbox-streams": "^6.5.3"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts build & node server",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "seed": "node seed.js",
