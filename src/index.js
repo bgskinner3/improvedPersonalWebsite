@@ -51,7 +51,7 @@ if (process.env.NODE_ENV === 'production') {
   link = 'http://localhost:4000/graphql';
 }
 
-console.log('link in index, ', link)
+
 const httpLink = createUploadLink({
   uri: link,
   fetch: customFetch,

@@ -18,7 +18,7 @@ const CreateProjects = () => {
     onCompleted: (data) => {
       if (data) {
         setPath(data.uploadFile.url.slice(37));
-        //.slice(37)
+         
         //21 for local
       }
     },
@@ -37,12 +37,10 @@ const CreateProjects = () => {
       await uploadFile({ variables: { file } });
     }
   };
-  console.log('path heroku', path);
+  
 
   const handleSubmit = async () => {
     try {
-
-      console.log('path heroku', path)
       await createproject({
         variables: {
           input: {
