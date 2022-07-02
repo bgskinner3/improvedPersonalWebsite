@@ -55,8 +55,8 @@
     "seed": "SEED=true node seed.js",
     "start:server": "node server",
     "start:dev": "react-scripts start & node server",
-    "eject": "react-scripts eject",
-    "heroku-postbuild": "npm install && npm run build"
+    "eject": "react-scripts eject"
+    
   },
   "eslintConfig": {
     "extends": [
