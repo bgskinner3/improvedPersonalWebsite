@@ -1,6 +1,9 @@
 {
   "name": "personal-website",
   "version": "0.1.0",
+  "engines": {
+    "node": "16.13.2"
+  },
   "private": true,
   "dependencies": {
     "@apollo/client": "^3.6.9",
