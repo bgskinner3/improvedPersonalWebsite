@@ -153,15 +153,15 @@ const resolvers = {
       const stream = createReadStream();
       const pathName = path.join(
         __dirname,
-        `../../build/projectimages/${randomName}`
+        `../../public/projectimages/${randomName}`
       );
-      //   ../../../public/blogimages
+      //   ../../../build/blogimages
       await stream.pipe(fs.createWriteStream(pathName));
 
       return {
         url: `https://brennangskinner.herokuapp.com/projectimages/${randomName}`,
       };
-      //https://brennanskinner.herokuapp.com/blogimages/${randomName}
+      //https://brennangskinner.herokuapp.com//blogimages/${randomName}
     },
   },
 };
