@@ -49,10 +49,10 @@
     "workbox-streams": "^6.5.3"
   },
   "scripts": {
-    "start": "react-scripts build & node server",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "seed": "node seed.js",
+    "seed": "SEED=true node seed.js",
     "start:server": "node server",
     "start:dev": "react-scripts start & node server",
     "eject": "react-scripts eject",
