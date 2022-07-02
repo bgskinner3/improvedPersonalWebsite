@@ -17,7 +17,8 @@ const CreateProjects = () => {
   const [uploadFile] = useMutation(UPLOAD_FILE, {
     onCompleted: (data) => {
       if (data) {
-        setPath(data.uploadFile.url.slice(37));
+        setPath(data.uploadFile.url);
+        //.slice(37)
         //21 for local
       }
     },
