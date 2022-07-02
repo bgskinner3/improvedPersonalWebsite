@@ -17,7 +17,8 @@ const CreateProjects = () => {
   const [uploadFile] = useMutation(UPLOAD_FILE, {
     onCompleted: (data) => {
       if (data) {
-        setPath(data.uploadFile.url.slice(21));
+        setPath(data.uploadFile.url.slice(37));
+        //21 for local
       }
     },
   });
@@ -35,6 +36,7 @@ const CreateProjects = () => {
       await uploadFile({ variables: { file } });
     }
   };
+  console.log('path heroku', path);
 
   const handleSubmit = async () => {
     try {
