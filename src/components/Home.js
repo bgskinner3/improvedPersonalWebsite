@@ -1,7 +1,7 @@
 import React from 'react';
 import profile from '../images/profile.jpg';
 import Projects from './Projects';
-
+import StaticProjects from './ProjectStatic';
 
 const Home = () => {
   return (
@@ -31,19 +31,27 @@ const Home = () => {
         </div>
       </div>
       <div id="projects" className="m-20">
+        <StaticProjects />
         <Projects />
       </div>
       <div className="flex-grow border-t border-gray" />
-      <div id="about" className="grid grid-cols-2">
-        <div className="flex justify-center">
+      <div id="about" className="grid grid-cols-2 content-center">
+        <div className="grid grid-cols-1 content-center ml-20">
           <img
-            className="mask mask-circle sm:w-96 ml-24 mr-24"
+            className="mask mask-circle w-96 ml-24 mr-24"
             src={profile}
             alt=""
           />
         </div>
         <div className="grid grid-cols-1 content-center m-20">
-          <p className="text-left font-serif leading-loose">
+          <div className="flex py-5 items-center mb-5 ">
+            <div className="flex-grow border-t border-neutral-content " />
+            <p className=" font-extrabold text-neutral-content italic text-bold lg:text-2xl object-contain text-left font-serif ml-10 mr-10 text-center">
+              About Me
+            </p>
+            <div className="flex-grow border-t border-neutral-content " />
+          </div>
+          <p className="text-left font-serif leading-loose p-10">
             Hello, my name is Brennan Skinner and here is another generic "about
             me" from another generic software engineer. I'm proficent in
             Javascript, Node, SQL and React and I have knowledge of Solidty,
@@ -51,6 +59,7 @@ const Home = () => {
             my free time educating myself on web3 tech and its application. I'm
             a avid pool player and I enjoy playing chess.
           </p>
+          <div className="flex-grow border-t border-neutral-content mt-10 " />
         </div>
       </div>
       <div className="flex-grow border-t border-gray" />
